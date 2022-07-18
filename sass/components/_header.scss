@@ -1,0 +1,150 @@
+
+
+
+.header {
+    border-bottom: 1px solid;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+}
+
+
+.logo-link {
+    width: 145px;
+    color: var(--logo-color);
+    font-weight: 700;
+    font-size: 26px;
+    text-decoration: none;
+    font-family: 'Raleway';
+@media screen and (max-width: 767px){
+height: 60px;
+    align-items: center;
+    display: flex;
+}
+    
+}
+
+.logo-accent {
+    color: var(--accent-color);
+}
+
+/* Site-nav */
+.site-nav {
+    display: flex;
+    margin-left: 93px;
+    align-items: center;
+    &__link:hover,
+    &__link:focus {
+    color: var(--accent-color);
+    }
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
+}
+
+.site-nav__item+.site-nav__item {
+    margin-left: 50px;
+}
+
+.site-nav__link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: var(--secont-text-color);
+
+    font-weight: 500;
+    text-decoration: none;
+
+    transition: color 250ms var(--timing-function);
+
+}
+
+
+.auth-nav {
+    display: flex;
+    margin-left: auto;
+    @media screen and (max-width: 767px) {
+            display: none;
+        }
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+        flex-direction: column;
+        
+    }
+}
+
+.nav-smartphone {
+    width: 10px;
+    height: 12px;
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+.nav-envelope {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+.auth-nav__item+.auth-nav__item {
+    margin-left: 30px;
+
+    
+}
+
+.auth-nav__header-contact {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: var(--primary-text-color);
+    font-weight: 500;
+    text-decoration: none;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+                color: var(--accent-color);
+                opacity: 1;
+        }
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            padding: 1px 0;
+        }
+        
+}
+
+/* Наведения */
+
+
+
+
+.site-nav__link.current {
+    color: var(--accent-color);
+}
+
+.current {
+    position: relative;
+    color: var(--accent-color);
+}
+
+.current::after {
+    content: '';
+
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+
+    display: inline-block;
+    width: 100%;
+    height: 4px;
+
+    border-radius: 2px;
+
+    background-color: var(--accent-color);
+
+
+}
