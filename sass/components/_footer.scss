@@ -57,10 +57,20 @@
 .footer-box {
     display: flex;
     align-items: baseline;
+
+    @media screen and (max-width: 767px){
+        display: block;
+        text-align: center;
+    }
 }
 
 .address-box {
     margin-right: 70px;
+    @media screen and (max-width: 767px) {
+        margin-right: auto;
+        margin-left: auto;
+        
+    }
 }
 
 .join-box__title {
