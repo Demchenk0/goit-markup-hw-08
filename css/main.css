@@ -332,6 +332,12 @@ ul {
   height: 581px;
   background-color: white;
 }
+@media screen and (max-width: 767px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
 
 .modal-close {
   z-index: 1;
@@ -368,6 +374,12 @@ ul {
   width: 528px;
   min-height: 581px;
 }
+@media screen and (max-width: 767px) {
+  .modal-box {
+    width: 450px;
+    min-height: 609px;
+  }
+}
 
 .modal-box__title {
   margin: 0;
@@ -378,11 +390,21 @@ ul {
   letter-spacing: 0.03em;
   color: var(--secont-text-color);
 }
+@media screen and (max-width: 767px) {
+  .modal-box__title {
+    line-height: 1.5;
+  }
+}
 
 .form {
   margin-left: auto;
   margin-right: auto;
   width: 448px;
+}
+@media screen and (max-width: 767px) {
+  .form {
+    width: 370px;
+  }
 }
 
 .form__tag {
@@ -492,6 +514,13 @@ ul {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 767px) {
+  .fake {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 1.2px;
+  }
+}
 
 .checkbox-icon {
   display: inline-block;
@@ -503,6 +532,11 @@ ul {
   fill: #FFFFFF;
   background-color: #FFFFFF;
 }
+@media screen and (max-width: 767px) {
+  .checkbox-icon {
+    margin-right: 6px;
+  }
+}
 
 .checkbox-title {
   font-family: "Roboto";
@@ -513,6 +547,12 @@ ul {
   letter-spacing: 0.03em;
   text-decoration-line: underline;
   color: var(--accent-color);
+}
+@media screen and (max-width: 767px) {
+  .checkbox-title {
+    font-size: 12px;
+    line-height: 1.16;
+  }
 }
 
 /* Смена цвета */
