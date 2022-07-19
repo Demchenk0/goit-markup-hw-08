@@ -16,6 +16,14 @@ body {
     font-size: 14px;
 }
 
+
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 ul {
     list-style: none;
     
@@ -59,7 +67,7 @@ ul {
 // Telefon
 @media screen and (max-width: 767px) {
 .container {
-    width: 480px;
+    max-width: 480px;
     }
         .section-profession {
         display: none;

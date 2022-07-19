@@ -36,6 +36,12 @@ body {
   font-size: 14px;
 }
 
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 ul {
   list-style: none;
 }
@@ -70,7 +76,7 @@ ul {
 
 @media screen and (max-width: 767px) {
   .container {
-    width: 480px;
+    max-width: 480px;
   }
   .section-profession {
     display: none;
@@ -254,14 +260,13 @@ ul {
 }
 @media screen and (max-width: 767px) {
   .hero__link {
-    max-width: 767px;
+    max-width: 480px;
     height: 400px;
     padding: 118px 60px;
   }
 }
 
 .hero__title {
-  width: 696px;
   height: 120px;
   margin-left: auto;
   margin-right: auto;
@@ -276,7 +281,7 @@ ul {
 }
 @media screen and (max-width: 767px) {
   .hero__title {
-    width: 360px;
+    max-width: 360px;
     height: 84px;
     left: 60px;
     top: 178px;
@@ -286,6 +291,11 @@ ul {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    width: 696px;
   }
 }
 
@@ -516,7 +526,6 @@ ul {
 }
 @media screen and (max-width: 767px) {
   .fake {
-    display: inline-block;
     font-size: 12px;
     line-height: 1.2px;
   }
@@ -534,7 +543,7 @@ ul {
 }
 @media screen and (max-width: 767px) {
   .checkbox-icon {
-    margin-right: 6px;
+    margin-right: 8px;
   }
 }
 
@@ -598,7 +607,7 @@ ul {
     padding: 0;
     margin-left: 0;
     flex-direction: column;
-    width: 450px;
+    max-width: 450px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -612,7 +621,7 @@ ul {
 }
 @media screen and (max-width: 767px) {
   .feature__item {
-    width: 450px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -747,7 +756,7 @@ ul {
 @media screen and (max-width: 767px) {
   .team-list__item {
     margin-left: 0;
-    width: 450px;
+    width: 100%;
     margin-bottom: 30px;
     margin-left: 0;
   }
@@ -1107,7 +1116,6 @@ ul {
 .submit-input {
   padding: 15px auto;
   padding-left: 10px;
-  width: 358px;
   height: 50px;
   background: #2f303a;
   color: rgba(255, 255, 255, 0.6);
@@ -1118,6 +1126,18 @@ ul {
 @media screen and (max-width: 767px) {
   .submit-input {
     margin-bottom: 20px;
+    max-width: 450px;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .submit-input {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .submit-input {
+    width: 358px;
   }
 }
 

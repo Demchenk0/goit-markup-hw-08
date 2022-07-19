@@ -233,9 +233,8 @@
     align-items: center;
 
     @media screen and (max-width: 767px){
-        display: inline-block;
         font-size: 12px;
-            line-height: 1.2px;
+        line-height: 1.2px;
     }
     
 }
@@ -252,7 +251,7 @@
     background-color: #FFFFFF;
     
     @media screen and (max-width: 767px){
-        margin-right: 6px;
+        margin-right: 8px;
     }
 
 }
