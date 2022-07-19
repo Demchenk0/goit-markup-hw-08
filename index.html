@@ -27,7 +27,7 @@
         </ul>
 
         <button tupe="button" 
-        class="menu-button is-open"
+        class="menu-button"
         aria-expanded=false 
         aria-controls="menu-container"
         data-menu-button
@@ -36,13 +36,15 @@
           height="40"
           aria-label="Переключатель мобильного меню"
           >
-            <use class=icon-cross href="./images/symbol-defs.svg#close_40px"></use>
             <use class=icon-menu href="./images/symbol-defs.svg#menu_40px"></use>
+            <use class=icon-cross href="./images/symbol-defs.svg#close_40px"></use>
           </svg>
         </button>
 
         <div class="menu-container" id=menu-container data-menu>
-          Контейнер меню
+          <div class="menu-container__navigation"></div>
+          <div class="menu-container__contacts"></div>
+          <div class="menu-container__wed"></div>
         </div>
 
       </nav>
