@@ -55,7 +55,22 @@
 }
 
 
+.footer-tablet {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
 
+    @media screen and (max-width: 767px){
+        display: block;
+
+    }
+        @media screen and (min-width: 768px) and (max-width: 1199px){
+                display: flex;
+                justify-content: space-around;
+                width: 768px;
+                align-items: baseline;
+        }
+}
 
 
 .footer-box {
@@ -66,6 +81,10 @@
         display: block;
         text-align: center;
     }
+        @media screen and (min-width: 768px) and (max-width: 1199px){
+            display: flex;
+            flex-wrap: wrap;
+        }
 }
 
 .address-box {
@@ -87,6 +106,10 @@
     margin-top: 0;
     margin-bottom: 20px;
     color: var(--white-color);
+
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+        text-align: center;
+    }
 }
 
 
@@ -122,6 +145,9 @@
         margin-left: 0;
         text-align: center;
     }
+        @media screen and (min-width: 768px) and (max-width: 1199px){
+            margin-top: 60px;
+        }
 }
 
 .footer-list:not(:last-child) {
@@ -171,13 +197,22 @@
         align-items: center;
         
     }
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            display: block;
+        }
+        
 }
 
 .footer-submit {
     display: inline-block;
     justify-content: center;
     margin-left: auto;
-
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+        display: block;
+            margin-right: auto;
+            margin-left: auto;
+            text-align: center;
+    }
 }
 
 .submit-input {
@@ -219,6 +254,12 @@
     @media screen and (max-width: 767px){
         display: inline-flex;
     }
+        @media screen and (min-width: 768px) and (max-width: 1199px){
+            margin-left: auto;
+                margin-right: auto;
+                margin-top: 20px;
+        }
+                
 }
 
 .submit-icon {
