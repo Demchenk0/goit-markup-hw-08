@@ -21,6 +21,9 @@
         flex-direction: column;
         width: 450px;
     }
+        @media screen and (min-width: 768px) and (max-width: 1199px){
+            gap: 30px;
+        }
 }
 
 .feature__item {
@@ -28,8 +31,11 @@
 
         @media screen and (max-width: 767px) {
         width: 450px;
-        
     }
+
+        @media screen and (min-width: 768px) and (max-width: 1199px){
+            width: 354px;
+        }
 }
 
 .feature__item+.feature__item {
@@ -38,6 +44,9 @@
         @media screen and (max-width: 767px) {
         margin-left: 0;
     }
+        @media screen and (min-width: 768px) and (max-width: 1199px){
+            margin-left: 0;
+        }
 }
 
 .feature__text {

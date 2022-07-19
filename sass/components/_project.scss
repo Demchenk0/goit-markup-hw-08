@@ -4,6 +4,10 @@
     padding: 0;
     display: flex;
     flex-wrap: wrap;
+
+    @media screen and (max-width: 767px){
+        
+    }
 }
 
 .project__item {
@@ -19,6 +23,11 @@
                 0px 4px 4px rgba(0, 0, 0, 0.06),
                 1px 4px 6px rgba(0, 0, 0, 0.16);
         }
+                @media screen and (max-width: 767px){
+                    margin-right: 0;
+                    margin-bottom: 0;
+                    width: 450px;
+                }
 }
 
 .project__item:nth-child(3n) {
@@ -49,6 +58,7 @@
 
 .project__img {
     display: block;
+    
 }
 
 .project-description {
@@ -79,6 +89,7 @@
             opacity: 1;
             transform: translateY(0);
         }
+        
 }
 
 
