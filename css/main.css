@@ -215,6 +215,26 @@ ul {
   text-decoration: none;
   transition: color 250ms var(--timing-function);
 }
+@media screen and (max-width: 767px) {
+  .site-nav__link {
+    font-size: 40px;
+    line-height: 1.17;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .site-nav__link {
+    font-size: 14px;
+    line-height: 1.14;
+    padding: 32px 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .site-nav__link {
+    font-size: 14px;
+    line-height: 1.14;
+    padding: 32px 0;
+  }
+}
 
 .auth-nav {
   display: flex;
@@ -233,53 +253,87 @@ ul {
   }
 }
 
-.nav-smartphone {
-  width: 10px;
-  height: 12px;
-  margin-right: 10px;
-  fill: currentColor;
+.auth-nav__list {
+  margin-top: 0;
+  margin-bottom: 0;
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .nav-smartphone {
-    width: 10px;
-    height: 14px;
+@media screen and (max-width: 767px) {
+  .auth-nav__list {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 64px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .auth-nav__list {
+    display: flex;
   }
 }
 
-.nav-envelope {
-  width: 16px;
-  height: 12px;
+.nav-smartphone {
   margin-right: 10px;
   fill: currentColor;
 }
+@media screen and (max-width: 767px) {
+  .nav-smartphone {
+    display: none;
+  }
+}
+.nav-envelope {
+  margin-right: 10px;
+  fill: currentColor;
+}
+@media screen and (max-width: 767px) {
+  .nav-envelope {
+    display: none;
+  }
+}
 
-.auth-nav__item + .auth-nav__item {
-  margin-left: 30px;
+@media screen and (max-width: 767px) {
+  .auth-nav__item:not(:last-child) {
+    margin-top: 32px;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .auth-nav__item + .auth-nav__item {
-    margin-left: 0;
-    display: flex;
-    align-items: center;
+  .auth-nav__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .auth-nav__item:not(:last-child) {
+    margin-right: 30px;
   }
 }
 
 .auth-nav__header-contact {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
   color: var(--primary-text-color);
   font-weight: 500;
   text-decoration: none;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .auth-nav__header-contact:hover, .auth-nav__header-contact:focus {
   color: var(--accent-color);
   opacity: 1;
 }
+@media screen and (max-width: 767px) {
+  .auth-nav__header-contact {
+    font-size: 24px;
+    line-height: 1.16;
+  }
+}
+@media screen and (min-width: 768px) {
+  .auth-nav__header-contact {
+    display: flex;
+    align-items: center;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .auth-nav__header-contact {
-    padding: 1px 0;
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -303,6 +357,44 @@ ul {
   height: 4px;
   border-radius: 2px;
   background-color: var(--accent-color);
+}
+
+@media screen and (max-width: 767px) {
+  .social-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .social-nav {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .social-nav {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .social-nav__item {
+    padding-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .social-nav__link {
+    color: var(--accent-color);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    text-decoration: none;
+  }
 }
 
 .hero__link {
@@ -1451,6 +1543,21 @@ ul {
 @media screen and (max-width: 767px) {
   .menu-button {
     display: block;
+    z-index: 1;
+  }
+  .menu-button .menu-button:hover,
+.menu-button .menu-button:focus {
+    fill: var(--accent-color);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .menu-button {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu-button {
+    display: none;
   }
 }
 
@@ -1464,6 +1571,11 @@ ul {
 
 .menu-button.is-open .icon-menu {
   display: none;
+}
+
+.icon-cross {
+  position: absolute;
+  z-index: 1;
 }
 
 .menu-container {
