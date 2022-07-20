@@ -41,15 +41,15 @@
         margin: 15px;
     }
 
-        @media screen and (min-width: 1200px){
-            width: calc((100% - 90px)/3);
-            margin: 15px;
-        }
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 90px)/3);
+        margin: 15px;
+    }
 }
 
 // .project__item:nth-child(3n) {
 //     margin-right: 0;
-    
+
 // }
 
 // .project__item:nth-last-child(-n + 3) {
@@ -116,6 +116,7 @@
 .project--relative {
     position: relative;
     overflow: hidden;
+    z-index: -1;
 
 }
 

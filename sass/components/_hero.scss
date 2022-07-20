@@ -19,15 +19,15 @@
     @media screen and (max-width: 767px) {
         max-width: 480px;
         height: 400px;
-        padding: 118px 60px;
+        padding: 118px 0;
 
     }
-    
+
 }
 
 
 .hero__title {
-    height: 120px;
+
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
@@ -39,21 +39,21 @@
     font-size: 44px;
     text-transform: uppercase;
 
-    @media screen and (max-width: 767px){
-            max-width: 360px;
-            left: 60px;
-            top: 178px;
-            font-weight: 900;
-            font-size: 26px;
-            line-height: 1.6;        
-            text-align: center;
-            letter-spacing: 0.06em;
-            text-transform: uppercase;
+    @media screen and (max-width: 767px) {
+        max-width: 360px;
+        left: 60px;
+        top: 178px;
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 1.6;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
     }
 
-        @media screen and (min-width: 1200px){
-            width: 696px;
-        }
+    @media screen and (min-width: 1200px) {
+        width: 696px;
+    }
 }
 
 /* button */

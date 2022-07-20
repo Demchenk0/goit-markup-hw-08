@@ -3,36 +3,48 @@
 .filters {
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
-    
-    @media screen and (max-width: 767px){
+
+
+    @media screen and (max-width: 767px) {
         flex-wrap: wrap;
         justify-content: flex-start;
         gap: 8px;
         margin-bottom: 40px;
     }
 
-    
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+    }
+
+
 }
+
 .section-filters {
     padding-top: 94px;
     padding-bottom: 94px;
-    @media screen and (max-width: 767px){
+
+    @media screen and (max-width: 767px) {
         padding-top: 60px;
         padding-bottom: 60px;
     }
-        @media screen and (min-width: 768px){
-            padding-top: 60px;
-            padding-bottom: 60px;
-            
-        }
+
+    @media screen and (min-width: 768px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+    }
 }
 
 .filters__item+.filters__item {
     margin-left: 8px;
-    @media screen and (max-width: 767px){
+
+    @media screen and (max-width: 767px) {
         margin-left: 0;
-        
+
     }
 }
 
@@ -51,11 +63,11 @@
     transition: color 250ms var(--timing-function),
         background-color 250ms var(--timing-function);
 
-        &:hover,
-        &:focus {
-            color: var(--white-color);
-            background-color: var(--accent-bg-color);
-            transition: color 250ms var(--timing-function),
+    &:hover,
+    &:focus {
+        color: var(--white-color);
+        background-color: var(--accent-bg-color);
+        transition: color 250ms var(--timing-function),
             background-color 250ms var(--timing-function);
-        }
+    }
 }
