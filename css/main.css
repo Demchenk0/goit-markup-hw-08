@@ -170,12 +170,6 @@ ul {
     margin-left: 88px;
   }
 }
-@media screen and (min-width: 1200px) {
-  .container-nav {
-    margin-left: 93px;
-  }
-}
-
 .site-nav {
   margin-top: 0;
   margin-bottom: 0;
@@ -521,6 +515,11 @@ ul {
     height: 609px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .modal {
+    width: 450px;
+  }
+}
 
 .modal-close {
   z-index: 1;
@@ -563,6 +562,13 @@ ul {
     min-height: 609px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .modal-box {
+    width: 450px;
+    height: 609px;
+    padding: 40px;
+  }
+}
 
 .modal-box__title {
   margin: 0;
@@ -578,6 +584,11 @@ ul {
     line-height: 1.5;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .modal-box__title {
+    line-height: 1.5;
+  }
+}
 
 .form {
   margin-left: auto;
@@ -587,6 +598,11 @@ ul {
 @media screen and (max-width: 767px) {
   .form {
     max-width: 370px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .form {
+    width: 100%;
   }
 }
 
@@ -703,6 +719,12 @@ ul {
     line-height: 1.2px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .fake {
+    font-size: 12px;
+    line-height: 1.2px;
+  }
+}
 
 .checkbox-icon {
   display: inline-block;
@@ -719,6 +741,11 @@ ul {
     margin-right: 8px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .checkbox-icon {
+    margin-right: 8px;
+  }
+}
 
 .checkbox-title {
   font-family: "Roboto";
@@ -731,6 +758,12 @@ ul {
   color: var(--accent-color);
 }
 @media screen and (max-width: 767px) {
+  .checkbox-title {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .checkbox-title {
     font-size: 12px;
     line-height: 1.16;
@@ -786,6 +819,7 @@ ul {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .feature {
     gap: 30px;
+    padding-bottom: 30px;
   }
 }
 
@@ -795,6 +829,7 @@ ul {
 @media screen and (max-width: 767px) {
   .feature__item {
     width: 100%;
+    padding-bottom: 30px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -915,6 +950,13 @@ ul {
   font-weight: 700;
   font-size: 36px;
   text-align: center;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .section-team__title {
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 1.17;
+  }
 }
 @media screen and (max-width: 767px) {
   .section-team {
@@ -1053,6 +1095,13 @@ ul {
     line-height: 1.17;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .section-cliends__title {
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 1.17;
+  }
+}
 
 .cliends-link {
   display: flex;
@@ -1166,7 +1215,7 @@ ul {
     display: flex;
     justify-content: space-around;
     width: 768px;
-    align-items: baseline;
+    align-items: center;
   }
 }
 
@@ -1419,6 +1468,12 @@ ul {
     padding-bottom: 60px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .section-filters {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 .filters__item + .filters__item {
   margin-left: 8px;
@@ -1478,8 +1533,7 @@ ul {
     margin-bottom: 0;
     justify-content: center;
     align-items: center;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -1516,12 +1570,22 @@ ul {
 .project__img {
   display: block;
 }
+@media screen and (max-width: 767px) {
+  .project__img {
+    display: block;
+  }
+}
 
 .project-description {
   padding: 20px 24px 20px 24px;
   border-left: 1px solid var(--description-color);
   border-right: 1px solid var(--description-color);
   border-bottom: 1px solid var(--description-color);
+}
+@media screen and (max-width: 767px) {
+  .project-description {
+    max-width: 100%;
+  }
 }
 
 .button.primary {
@@ -1538,11 +1602,22 @@ ul {
   opacity: 1;
   transform: translateY(0);
 }
+@media screen and (max-width: 767px) {
+  .project__card {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+}
 
 .project--relative {
   position: relative;
   overflow: hidden;
   z-index: -1;
+}
+@media screen and (max-width: 767px) {
+  .project--relative {
+    max-width: 100%;
+  }
 }
 
 .project__text {
@@ -1562,6 +1637,12 @@ ul {
   transition: transform 250ms var(--timing-function);
   opacity: 1;
   outline: 2px solid var(--logo-color);
+}
+@media screen and (max-width: 767px) {
+  .project__text {
+    display: block;
+    height: 100%;
+  }
 }
 
 .menu-button {
